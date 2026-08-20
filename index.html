@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Cinari — Network Intelligence for Infrastructure</title>
+  <meta name="description" content="Cinari is an open-source network intelligence engine for infrastructure software.">
+  <link rel="icon" href="assets/cinari-logo.jpg">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html"><img src="assets/cinari-logo.jpg" alt="Cinari logo"><span>CINARI</span></a>
+  <nav>
+    <a class="active" href="index.html">Home</a><a href="about.html">About</a><a href="architecture.html">Architecture</a><a href="docs.html">Docs</a>
+    <a class="github" href="https://github.com/cinariengines/cinari.git" target="_blank" rel="noopener">GitHub ↗</a>
+  </nav>
+  <button class="menu" aria-label="Open navigation">☰</button>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-copy reveal">
+    <p class="eyebrow">OPEN-SOURCE INFRASTRUCTURE INTELLIGENCE</p>
+    <h1>Understand <span>why</span> your infrastructure fails.</h1>
+    <p class="lead">Cinari is an open-source network intelligence engine designed to observe system and network behavior, correlate events across components, and produce evidence-backed explanations of likely failures.</p>
+    <div class="actions">
+      <a class="btn primary" href="https://github.com/cinariengines/cinari.git" target="_blank" rel="noopener">Explore Cinari</a>
+      <a class="btn ghost" href="architecture.html">See how it works →</a>
+    </div>
+    <div class="terminal">
+      <div class="term-bar"><i></i><i></i><i></i><span>cinari</span></div>
+      <pre><span>$</span> cinari inspect --system
+<span class="muted">observing network + system events...</span>
+<span class="ok">✓</span> events correlated
+<span class="ok">✓</span> causal chain reconstructed
+<span class="warn">!</span> likely cause: network path degradation
+<span class="muted">evidence confidence: 87%</span></pre>
+    </div>
+  </div>
+  <div class="hero-visual reveal">
+    <div class="orb"><div class="ring r1"></div><div class="ring r2"></div><div class="core">C</div></div>
+    <div class="signal s1">NETWORK</div><div class="signal s2">SYSTEM</div><div class="signal s3">EVENTS</div>
+  </div>
+</section>
+
+<section class="strip">
+  <div><strong>OBSERVE</strong><span>Raw behavior</span></div>
+  <div><strong>CORRELATE</strong><span>Related events</span></div>
+  <div><strong>REASON</strong><span>Likely causes</span></div>
+  <div><strong>EXPLAIN</strong><span>Supporting evidence</span></div>
+</section>
+
+<section class="section">
+  <div class="section-head reveal"><p class="eyebrow">THE PROBLEM</p><h2>Monitoring tells you something broke.<br><span>Cinari is built to investigate why.</span></h2></div>
+  <div class="grid three">
+    <article class="card reveal"><b>01</b><h3>Observe</h3><p>Capture meaningful network and system behavior with minimal disruption to existing infrastructure.</p></article>
+    <article class="card reveal"><b>02</b><h3>Correlate</h3><p>Connect events across services, processes, hosts, and network paths instead of viewing signals in isolation.</p></article>
+    <article class="card reveal"><b>03</b><h3>Explain</h3><p>Construct a likely failure chain and show the evidence behind the diagnosis, including uncertainty and alternatives.</p></article>
+  </div>
+</section>
+
+<section class="section dark-panel">
+  <div class="section-head reveal"><p class="eyebrow">DESIGNED FOR ENGINEERS</p><h2>Integrate first.<br><span>Understand later.</span></h2><p>Run Cinari alongside the infrastructure you already have. The goal is not to replace every observability system—it is to add an intelligence layer that can reason across the signals your system produces.</p></div>
+  <div class="code-grid reveal">
+    <div><span class="code-label">C</span><pre>#include &lt;cinari/cinari.h&gt;
+
+cinari_init();
+cinari_observe(system);
+cinari_analyze(events);
+cinari_shutdown();</pre></div>
+    <div class="flow"><div>Existing system</div><i>↓</i><div>Cinari engine</div><i>↓</i><div>Evidence-backed diagnosis</div></div>
+  </div>
+</section>
+
+<section class="section cta">
+  <p class="eyebrow">BUILD WITH US</p><h2>Cinari is open source.</h2><p>Read the source, inspect the architecture, run it, break it, improve it.</p>
+  <a class="btn primary" href="https://github.com/cinariengines/cinari.git" target="_blank" rel="noopener">View repository on GitHub ↗</a>
+</section>
+</main>
+
+<footer><div><a class="brand" href="index.html"><img src="assets/cinari-logo.jpg" alt=""><span>CINARI</span></a><p>Network intelligence for infrastructure software.</p></div><div><a href="about.html">About</a><a href="architecture.html">Architecture</a><a href="docs.html">Docs</a><a href="https://github.com/cinariengines/cinari.git">GitHub</a></div><small>© <span id="year"></span> Cinari. Open-source infrastructure.</small></footer>
+<script src="assets/app.js"></script>
+</body>
+</html>

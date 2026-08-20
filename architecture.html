@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Cinari Architecture</title><link rel="icon" href="assets/cinari-logo.jpg"><link rel="stylesheet" href="assets/style.css"></head>
+<body>
+<header class="site-header"><a class="brand" href="index.html"><img src="assets/cinari-logo.jpg" alt=""><span>CINARI</span></a><nav><a href="index.html">Home</a><a href="about.html">About</a><a class="active" href="architecture.html">Architecture</a><a href="docs.html">Docs</a><a class="github" href="https://github.com/cinariengines/cinari.git">GitHub ↗</a></nav><button class="menu">☰</button></header>
+<main>
+<section class="page-hero"><p class="eyebrow">ARCHITECTURE</p><h1>Observe the system.<br>Reconstruct the story.</h1><p>Cinari is designed as a layered engine: collection feeds a common event model, correlation builds relationships, and analysis turns those relationships into explainable hypotheses.</p></section>
+<section class="section"><div class="architecture reveal">
+  <div class="arch-node"><small>01</small><strong>DATA SOURCES</strong><p>Network events · OS signals · traces · logs · metrics · process activity</p></div><div class="arrow">↓</div>
+  <div class="arch-node"><small>02</small><strong>OBSERVATION</strong><p>Normalize low-level behavior into structured events without forcing a new application architecture.</p></div><div class="arrow">↓</div>
+  <div class="arch-node"><small>03</small><strong>CORRELATION ENGINE</strong><p>Build temporal, spatial, dependency, and behavioral relationships between events.</p></div><div class="arrow">↓</div>
+  <div class="arch-node highlight"><small>04</small><strong>INTELLIGENCE ENGINE</strong><p>Generate competing hypotheses, rank likely causes, and quantify confidence from available evidence.</p></div><div class="arrow">↓</div>
+  <div class="arch-node"><small>05</small><strong>EXPLANATION</strong><p>Return a human-readable incident chain with supporting evidence and known uncertainty.</p></div>
+</div></section>
+<section class="section dark-panel"><div class="section-head"><p class="eyebrow">A DIAGNOSTIC, NOT A BLACK BOX</p><h2>Evidence should be inspectable.</h2><p>A useful infrastructure diagnosis should allow an engineer to trace the conclusion back to the signals that produced it. Cinari's direction is to make that chain a first-class output of the engine.</p></div></section>
+</main><footer><div><a class="brand" href="index.html"><img src="assets/cinari-logo.jpg" alt=""><span>CINARI</span></a><p>Network intelligence for infrastructure software.</p></div><div><a href="index.html">Home</a><a href="about.html">About</a><a href="docs.html">Docs</a><a href="https://github.com/cinariengines/cinari.git">GitHub</a></div><small>© <span id="year"></span> Cinari.</small></footer><script src="assets/app.js"></script></body></html>
